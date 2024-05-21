@@ -1,0 +1,14 @@
+*
+
+.Title {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    position: absolute;
+    top: 2vh;
+    left: 6vw;
+
+    font-size: 5vw;
+    color: #AC3939;
+    width: 100%;
+    /* text-align: center; */
+}
