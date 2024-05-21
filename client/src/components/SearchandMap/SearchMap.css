@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../../fonts/HELVETICANEUEROMAN.OTF') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: Helvetica;
+}
+
+.card a {
+    position: relative;
+    color: white;
+    top: 0.5vw;
+    /* padding-top: 1vw; */
+}
+
+.parent-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+
+.map-and-search {
+    display: flex;
+    flex-direction: row; /* Display items side by side */
+    justify-content: flex-start; /* Align items to the start of the container */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    padding: 1vw;
+    background: rgb(224, 224, 224);
+}
+
+#map {
+    flex: 0 0 auto;
+    width: 50vw;
+    height: 60vh;
+    border-radius: 10pt;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.searchResults {
+    flex: 1 1 50%;
+    height: 70vh;
+    width: 50vw;
+    border: solid 0.1pt black;
+    border-radius: 10pt;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.slider-container {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vw;
+    margin-bottom: 0.5vw;
+}
+
+.search-container {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vh;
+} 
+
+.searchButton {
+    width: 8vw; 
+    height: 6vh;    
+}
+
+#autocomplete-container {
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    gap: 20px;
+    padding: 1vw;
+    border: 1px solid rgb(193, 193, 193);
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#searchTextField {
+    width: 15vw;
+    height: 4vh;
+
+    padding: 10px;
+    border-radius: 10pt;
+
+    z-index: 1000; /* Example to ensure it's on top if needed */
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto; /* Ensure pointer events are not disabled */
+}
+
+
+
+
+button:hover {
+    color: #AC3939;
+    background-color: #ffffff;
+    border: 1px solid rgb(133, 92, 92)39;
+}
+
+button:disabled {
+    background-color: #8d8d8d;
+    color: #AC3939;
+    cursor: auto;
+    border: 1px solid rgb(133, 92, 92)39;
+}
+
+.card {
+    border: 1px solid rgb(194, 194, 194);
+    background-color: #AC3939;
+    color: white;
+    overflow: hidden;
+    border-radius: 2vw;
+    text-align: center; /* Center the content horizontally */
+    height:18vh;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.businessImg {
+    display: block; /* Ensures the image behaves as a block element */
+    object-fit: cover;
+    width: 12vw;
+    height: 10vh;
+}
+
+.grid {
+    display: grid;
+    grid-gap: 1vw;
+    grid-template-columns: 12vw 12vw 12vw;
+    margin-left: 1vw;
+}
+
+
+
+
+
+
+
+
+/* .clicked-coordinates {
+    margin-top: 2vh;
+    padding: 1vw;
+    border: 1px solid #8a8a8a;
+    background-color: #f9f9f9;
+    width: 50%;
+
+    margin-left: auto; 
+    margin-right: auto; 
+} */
